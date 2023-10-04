@@ -6,7 +6,27 @@
     <title>Advanced Layout 4</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+        header{
+            grid-area: header;
+        }
+        nav{
+            grid-area: nav;
+        }
+        main{
+            grid-area: main;
+        }
+        footer{
+            grid-area: footer;
+        }
+        #advanced-layout-4{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-areas: 
+            "nav header"
+            "main footer";
+          gap: 1em;
+          padding: 1em;
+        }
     </style>
   </head>
   <body id="advanced-layout-4">
